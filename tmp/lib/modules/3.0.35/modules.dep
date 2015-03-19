@@ -1,0 +1,27 @@
+kernel/fs/nls/nls_ascii.ko:
+kernel/fs/nls/nls_utf8.ko:
+kernel/crypto/tcrypt.ko:
+kernel/drivers/gpu/drm/drm.ko:
+kernel/drivers/gpu/drm/vivante/vivante.ko: kernel/drivers/gpu/drm/drm.ko
+kernel/drivers/misc/mxs-perfmon.ko:
+kernel/drivers/scsi/scsi_wait_scan.ko:
+kernel/drivers/net/wireless/wl12xx/wl12xx_sdio.ko:
+kernel/drivers/usb/host/xhci-hcd.ko:
+kernel/drivers/usb/gadget/g_ether.ko:
+kernel/drivers/usb/gadget/g_file_storage.ko:
+kernel/drivers/usb/gadget/g_mass_storage.ko:
+kernel/drivers/usb/gadget/g_serial.ko:
+kernel/drivers/usb/gadget/g_cdc.ko:
+kernel/drivers/i2c/algos/i2c-algo-bit.ko:
+kernel/drivers/media/platform/mxc/capture/mxc_v4l2_capture.ko: kernel/drivers/media/platform/mxc/capture/ipu_bg_overlay_sdc.ko kernel/drivers/media/platform/mxc/capture/ipu_still.ko kernel/drivers/media/platform/mxc/capture/ipu_prp_enc.ko kernel/drivers/media/platform/mxc/capture/ipu_csi_enc.ko kernel/drivers/media/platform/mxc/capture/ipu_fg_overlay_sdc.ko
+kernel/drivers/media/platform/mxc/capture/ipu_fg_overlay_sdc.ko:
+kernel/drivers/media/platform/mxc/capture/ipu_bg_overlay_sdc.ko:
+kernel/drivers/media/platform/mxc/capture/ipu_prp_enc.ko:
+kernel/drivers/media/platform/mxc/capture/ipu_still.ko:
+kernel/drivers/media/platform/mxc/capture/ipu_csi_enc.ko:
+kernel/drivers/media/platform/mxc/capture/camera_sensor_clock.ko:
+kernel/drivers/media/platform/mxc/capture/mt9m114.ko: kernel/drivers/media/platform/mxc/capture/camera_sensor_clock.ko
+kernel/drivers/media/platform/gspca/gspca_main.ko:
+kernel/drivers/media/platform/uvc/uvcvideo.ko:
+kernel/drivers/bluetooth/btusb.ko:
+kernel/lib/crc-ccitt.ko:
