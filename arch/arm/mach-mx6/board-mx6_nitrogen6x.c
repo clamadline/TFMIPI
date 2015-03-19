@@ -1892,8 +1892,8 @@ static void __init board_init(void)
 		mipi_csi2_pdata.csi_id = 0;
 #endif
 #ifdef APTINA_CAMERA
-		mt9m114_data.ipu = 0;
-		mt9m114_data.csi = 0;
+		mt9m114_mipi_data.ipu = 0;
+		mt9m114_mipi_data.csi = 0;
 		mipi_csi2_pdata.csi_id = 0;
 #endif
 #endif
