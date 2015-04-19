@@ -193,9 +193,9 @@ MODULE_PARM_DESC(debug, "debug level (0-2)");
 
 enum mt9m114_mode {
 	MT9M114_MODE_MIN = 0,
-	MT9M114_MODE_720P = 0,
+	MT9M114_MODE_720P = 2,
 	MT9M114_MODE_VGA = 1,
-	MT9M114_MODE_QVGA = 2,
+	MT9M114_MODE_QVGA = 0,
 	MT9M114_MODE_MAX = 0, /* we have to support */
 	MT9M114_MODE_INIT = 0xff,/*only for sensor init*/
 };
@@ -224,7 +224,7 @@ static const struct mt9m114_resolution mt9m114_resolutions[] = {
 
 #define MIN_FPS 10
 #define MAX_FPS 30
-#define DEFAULT_MODE MT9M114_MODE_720P
+#define DEFAULT_MODE MT9M114_MODE_VGA
 
 static int mt9m114_framerates[] = {
 	[MT9M114_MODE_VGA] = 30,

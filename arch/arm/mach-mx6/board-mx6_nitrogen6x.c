@@ -313,6 +313,7 @@ static const struct imxuart_platform_data mx6_arm2_uart4_data __initconst = {
 };
 #endif
 
+//#ifdef NOT_DEFINED //~~C.LaMadline~~
 static unsigned short ksz9031_por_cmds[] = {
 	0x0204, 0x0,		/* RX_CTL/TX_CTL output pad skew */
 	0x0205, 0x0,		/* RXDn pad skew */
@@ -373,7 +374,7 @@ static struct fec_platform_data fec_data __initdata = {
 	.phy = PHY_INTERFACE_MODE_RGMII,
 	.phy_irq = gpio_to_irq(GP_ENET_PHY_INT)
 };
-
+//#endif  //~~C.LaMadline~~
 static int spi_cs[] = {
 	GP_ECSPI1_CS1,
 };
@@ -1932,7 +1933,7 @@ static void __init board_init(void)
 	imx6q_add_mxc_hdmi(&hdmi_data);
 
 	imx6q_add_anatop_thermal_imx(1, &anatop_thermal_data);
-	imx6_init_fec(fec_data);
+	imx6_init_fec(fec_data); //~~C.LaMadline~~ no change
 	imx6q_add_pm_imx(0, &pm_data);
 	imx6q_add_sdhci_usdhc_imx(2, &sd3_data);
 	imx6q_add_sdhci_usdhc_imx(3, &sd4_data);
